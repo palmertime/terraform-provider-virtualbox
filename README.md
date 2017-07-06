@@ -1,5 +1,3 @@
-# **[This project is not actively maintained, someone please take over it.]**
-
 # VirtualBox provider for Terraform
 
 Inspired by [terraform-provider-vix](https://github.com/hooklift/terraform-provider-vix)
@@ -11,7 +9,7 @@ Inspired by [terraform-provider-vix](https://github.com/hooklift/terraform-provi
 
 [70b8945d]: https://golang.org/doc/code.html "GoLang dev basics"
 
-    go get github.com/ccll/terraform-provider-virtualbox
+    go get github.com/palmertime/terraform-provider-virtualbox
 
 ## Configure Terraform
 

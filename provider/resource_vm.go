@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	vbox "github.com/pyToshka/go-virtualbox"
+	vbox "github.com/palmertime/go-virtualbox"
 	"github.com/hashicorp/terraform/helper/schema"
 	multierror "github.com/hashicorp/go-multierror"
 	"os/exec"
