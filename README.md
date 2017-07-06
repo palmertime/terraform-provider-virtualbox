@@ -4,7 +4,7 @@
 
 Inspired by [terraform-provider-vix](https://github.com/hooklift/terraform-provider-vix)
 
-# How to build
+## How to build
 
 > Note: A common pitfall is not properly setting up a $GOPATH. This can lead to strange errors. You can read more about this [here][70b8945d]
 >  to familiarize yourself.
@@ -14,7 +14,7 @@ Inspired by [terraform-provider-vix](https://github.com/hooklift/terraform-provi
 1.  go get github.com/ccll/terraform-provider-virtualbox
 2.  go install github.com/ccll/terraform-provider-virtualbox
 
-# Configure Terraform
+## Configure Terraform
 
 Add the built provider to ~/.terraformrc
 
@@ -22,7 +22,7 @@ Add the built provider to ~/.terraformrc
       virtualbox = "/path/to/go/bin/terraform-provider-virtualbox"
     }
 
-# Testing provided example
+## Testing provided example
 
 1.  cd /path/to/go/src/github.com/ccll/terraform-provider-virtualbox/example
 2.  terraform plan
