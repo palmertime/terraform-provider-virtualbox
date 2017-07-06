@@ -9,14 +9,13 @@ Inspired by [terraform-provider-vix](https://github.com/hooklift/terraform-provi
 > Note: A common pitfall is not properly setting up a $GOPATH. This can lead to strange errors. You can read more about this [here][70b8945d]
 >  to familiarize yourself.
 
-[70b8945d]: https://golang.org/doc/code.html "https://golang.org/doc/code.html"
+[70b8945d]: https://golang.org/doc/code.html "GoLang dev basics"
 
-1.  go get github.com/ccll/terraform-provider-virtualbox
-2.  go install github.com/ccll/terraform-provider-virtualbox
+    go get github.com/ccll/terraform-provider-virtualbox
 
 ## Configure Terraform
 
-Add the built provider to ~/.terraformrc
+For terraform to use the provider, add the binary to .terraformrc config file.  This file should be in your users home directory. (ie., ~/.terraformrc)
 
     providers {
       virtualbox = "/path/to/go/bin/terraform-provider-virtualbox"
@@ -24,9 +23,11 @@ Add the built provider to ~/.terraformrc
 
 ## Testing provided example
 
-1.  cd /path/to/go/src/github.com/ccll/terraform-provider-virtualbox/example
-2.  terraform plan
-3.  terraform apply
+Change into the example directory inside the project and run Terraform.
+
+    cd /path/to/go/src/github.com/ccll/terraform-provider-virtualbox/example
+    terraform plan
+    terraform apply
 
 # Resources
 
